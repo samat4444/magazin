@@ -1,0 +1,11 @@
+{% block content %}
+<h1 style="text-align: center;font-size: 40px;color: aqua;">{{ blog.title }}</h1>
+<img src="{{blog.image.url}}"
+ style="width: 600px; height: 450px;
+ margin-left: 440px;
+ border-radius: 15px 15px 15px 15px;">
+
+ <p style="text-align: center; font-size: 30px;">{{ blog.description }}</p>
+ <p style="font-size: 20px;">{{ blog.created }}</p>
+
+{% endblock %}
